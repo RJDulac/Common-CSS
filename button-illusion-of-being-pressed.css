@@ -1,0 +1,21 @@
+
+.btn:link, /*link is a psudo class of .btn class. It's a state of the button selector.*/
+.btn:visted { 
+	text-transform: uppercase;
+	text-decoration: none; /*gets rid of link the button was created with anchor tag*/
+	padding: 15px 40px; /*padding at top and bottom*/
+	display: inline-block; /*box-model treats it as a normal block element. Should always do this if you give it some padding and heigth or width to elements*/
+	/*margin bottom for element above to give it white space*/
+	border-radius: 100px; /*gives button rounded borders*/
+	transition: all .2s; /*enables all properties to be animated*/
+    
+}
+
+.btn:hover {
+	transform: translateY(-3px);/* moves button up when hovering*/
+	box-shadow: 0, 10px 20px rgba(0,0,0,.2); /*shadow direction x, y and blur*/
+}
+.btn:active {
+	transform: translateY(-1px); /*when you click the button goes down*/
+	box-shadow: 0, 5px, 10px rgba(0,0,0, .2); /*half the values to make the button look closer when active*/
+}
